@@ -275,3 +275,5 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
+
+asset_url: /assets
