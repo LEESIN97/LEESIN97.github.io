@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "공대생 기록장"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
-name                     : "이 신"
+name                     : "엉탐"
 description              : "이신의 블로그 입니다."
 url                      : "https://LEESIN97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "이 신"
+  name             : "엉탐"
   avatar           : "/assets/images/myphoto.jpg"
-  bio              : "하고싶은 거?"
+  bio              : "? -> !"
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
