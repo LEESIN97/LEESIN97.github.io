@@ -83,20 +83,20 @@ chmod command를 이용해 파일의 Permission을 변경한다.
 chmod [<SET><ACTION><PERMISSIONS>]... FILE	
 ```
 
-<SET> 
+SET> 
 
 * u : user who owns the file
 * g : group who owns the file
 * o : u와g가 아닌 것들
 * a : all
 
-<ACTION>
+ACTION>
 
 * '+' : add
 * '=' : Specify the exact permission
 * '-' : remove
 
-<PERMISSION>
+PERMISSION>
 
 * r 
 * w
