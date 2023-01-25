@@ -29,9 +29,25 @@ last_modified_at: 2023-01-22
 
 퍼스트클래스 함수란 함수자체를 인자(argument)로써 다른 함수에 전달하거나 다른 함수의 결과값으로 리턴 할 수 있고, 함수를 변수에 할당하거나 데이터 구조안에 저장할 수 있음을 의미한다.
 
+```python
+# example
+def square(x):
+    return x*x
+f = square
+f(5)
 
+def cube(x):
+    return x*x*x
+
+def formula(method, argument_list):
+    return [method(value) for value in argument_list]
+```
+
+위의 예시에서 formula 함수는 필요한 함수를 매개변수로 받아와 매핑해서 이용할수 있다.
 
 * 클로저
+
+inner function을 return값으로 반환한다.
 
 이해하기 위해 예시를 들면
 
@@ -58,32 +74,32 @@ p_func('p 태그의 안입니다.')  # 10
 
 <br/>
 
-이 둘을 이해했다면 데코레이터라는 것이 무엇인지 살펴보자.
+이 두개의 특성을 데코레이터는 가진다.
 
 <br/>
 
 사용하는 이유? : 기존의 코드를 수정하지 않고 wrapper 함수를 이용하여 여러가지 기능을 추가할 수가 있다.
 
 ```python
-def decorator_function(original_function):
-    def wrapper_function(*args, **kwargs):  #1
-        print('{} 함수가 호출되기전 입니다.'.format(original_function.__name__))
-        return original_function(*args, **kwargs)  #2
-    return wrapper_function
+def star(func):
+    def inner(*args, **kwargs):
+        print("*"*30)
+        func(*args, **kwargs)
+        print("*"*30)
+    return inner
 
+def percent(func):
+    def inner(*args, **kwargs):
+        print("%"*30)
+        func(*args, **kwargs)
+        print("%"*30)
+    return inner
 
-@decorator_function
-def display():
-    print('display 함수가 실행됐습니다.')
+@star
+@percent
+def printer(msg):
+    print(msg)
 
-
-@decorator_function
-def display_info(name, age):
-    print('display_info({}, {}) 함수가 실행됐습니다.'.format(name, age))
-
-
-display()
-print()
-display_info('John', 25)
+printer("hello")
 ```
 
