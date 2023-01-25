@@ -52,20 +52,21 @@ inner function을 return값으로 반환한다.
 이해하기 위해 예시를 들면
 
 ```python
-def outer_func(tag):  # 1
-    tag = tag  # 5
+def outer_func(tag): 
+    tag = tag 
 
-    def inner_func(txt):  # 6
-        text = txt  # 8
-        print('<{0}>{1}<{0}>'.format(tag, text))  # 9
+    def inner_func(txt): 
+        text = txt  
+        print('<{0}>{1}<{0}>'.format(tag, text))  
 
-    return inner_func  # 7
+    return inner_func 
 
-h1_func = outer_func('h1')  # 2
-p_func = outer_func('p')  # 3
+h1_func = outer_func('h1') 
+p_func = outer_func('p') 
 
-h1_func('h1 태그의 안입니다.')  # 4
-p_func('p 태그의 안입니다.')  # 10
+h1_func('h1 태그의 안입니다.') 
+p_func('p 태그의 안입니다.')
+
 ```
 
 클로저는 하나의 함수로 여러가지의 함수를 간단히 만들어낼 수 있게 도와준다.
