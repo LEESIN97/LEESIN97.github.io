@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "shinsight"
+title                    : "LS's blog"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
 name                     : "shin"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "shin"
-  avatar           : "/assets/images/bbororo.jpg"
-  bio              : "major in robotics"
+  name             : "Lee Shin"
+  avatar           : "/assets/images/myphoto.jpg"
+  bio              : "올바른 길로 가는 과정"
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
