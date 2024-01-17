@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "LS's blog"
+title                    : "ShinSight"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
-name                     : "shin"
-description              : "shin's blog"
+name                     : "Lee Shin"
+description              : "ShinSight"
 url                      : "https://LEESIN97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "shins-blog"
+    shortname            : "ShinSight"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -99,14 +99,14 @@ analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-MCQZHGZ00R"
-    anonymize_ip         : false 
+    anonymize_ip         : false
 
 
 # Site Author
 author:
   name             : "Lee Shin"
   avatar           : "/assets/images/myphoto.jpg"
-  bio              : "올바른 길로 가는 과정"
+  bio              : "Insight"
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
@@ -114,7 +114,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:gkdlgus97@naver.com"
     - label: "Website"
-      icon: "fas fa-fw fa-link" 
+      icon: "fas fa-fw fa-link"
       url: "https://leesin97.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
