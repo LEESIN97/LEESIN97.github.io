@@ -7,5 +7,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.permalink: categories/ROS2 %}
+{% assign posts = site.categories.ROS2 %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
