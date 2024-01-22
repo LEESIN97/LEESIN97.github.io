@@ -21,11 +21,11 @@ last_modified_at: 2024-01-17
 
 ## 배열, 리스트, 벡터
 
-</br>
+<br/>
 
 
 
-</br>
+<br/>
 
 
 
@@ -39,9 +39,9 @@ last_modified_at: 2024-01-17
 
 
 
-</br>
+<br/>
 
-</br>
+<br/>
 
 
 
@@ -53,11 +53,11 @@ last_modified_at: 2024-01-17
 - 선언할 때 크기를 별도로 지정하지 않는다. 즉, 리스트는 변하기 쉬운 데이터를 다룰 때 적절하다.
 - 포인터를 저장할 공간이 필요하므로 배열보다 구조가 복잡하다.
 
-</br>
+<br/>
 
 
 
-</br>
+<br/>
 
 
 
@@ -67,11 +67,11 @@ last_modified_at: 2024-01-17
 - 맨 마지막 위치에 데이터를 삽입하거나 삭제할 때는 문제가 없지만 중간 데이터의 삽입 삭제는 배열과 같은 메커니즘으로 동작한다.
 - 배열과 마찬가지로 인덱스를 이용하여 각 데이터에 접근할 수 있다.
 
-</br>
+<br/>
 
 
 
-</br>
+<br/>
 
 
 
@@ -79,7 +79,7 @@ last_modified_at: 2024-01-17
 
 ### 문제
 
-</br>
+<br/>
 
 
 
@@ -91,7 +91,7 @@ last_modified_at: 2024-01-17
 
 각 자리의 숫자를 각각 더해야 하므로 이룰 나눠서 나머지를 구하는 방법도 있겠지만, 입력 받은 숫자를 바탕으로 char배열을 만들어 각 자리의 문자를 int형으로 바꿔 더해준다. 
 
-</br>
+<br/>
 
 
 
@@ -109,7 +109,7 @@ for(문자열 길이만큼 인덱싱) { 각 인덱스에서의 문자를 정수�
 
 cout << ans;
 
-</br>
+<br/>
 
 
 
@@ -129,9 +129,83 @@ double dnum = stod(sNum_d);
 float fnum = stof(sNum_d);
 ```
 
+숫자를 문자로 변환하기 위해서는 다음과 같은 방법을 이용한다.
+
+```cpp
+#include <string>
+
+int inum = 1234;
+int lnum = 1234;
+double dnum = 1234.56;
+float fnum = 1234.56f;
+string intToString = to_string(inum);
+string longToString = to_string(lnum);
+string doubleToString = to_string(dnum);
+string floatToString = to_string(fnum);
+
+```
 
 
 
+<br/>
+
+<br/>
+
+#### 평균 구하기 (백준 온라인 저지 1546번)
+
+1. 먼저, 입력받은 순서는 중요하지않고 입력 개수가 주어지기 때문에 배열 혹은 벡터를 사용하면 된다.
+
+2. 최대값을 먼저 구한다. 
+3. 최대값을 구했다면 구해진 최대값으로 원래 값들을 수정한다.
+4. 최종 평균값을 계산한다.
+
+수도 코드)
+
+cin >> n;
+
+int score[n];
+
+int max = 0;
+
+for(score의 길이만큼){ max 보다 크다면 max 갱신}
+
+for(score의 길이만큼){ score[i]값 갱신}
+
+cout << socre의 총합 / score의 길이 
+
+```cpp
+  #include <iostream>
+
+  using namespace std;
+
+  int main(){
+    int n;
+    cin >> n;
+    float score[n];
+    int max = 0;
+
+    // get max
+    for(int i=0; i<n; i++){
+      cin >> score[i];
+      if(max < score[i]) max = score[i];
+    }
+
+    for(int i=0; i<n; i++){
+      score[i] = score[i] / (float)max * 100;
+    }
+
+    float sum = 0;
+    for(int i=0; i<n; i++)
+    {
+      sum += score[i];
+    }
+    float average = 0;
+    average = sum / (float)n;
+    cout << average << endl;
+
+  }
+
+```
 
 
 
