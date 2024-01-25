@@ -3,7 +3,7 @@ layout: single
 title:  "unhatched linux(2)"
 excerpt: "Networking academy Winter 2022 Linux Unhatched - MY Engineering Camp"
 
-categories: etc
+categories: linux
 tag: [linux, os, linux_command_syntax]
 
 toc: true
@@ -13,7 +13,7 @@ author_profile: true
 sidebar: true
 
 search: true
- 
+
 date: 2023-01-08
 last_modified_at: 2023-01-08
 ---
@@ -26,12 +26,12 @@ last_modified_at: 2023-01-08
 
 ```C
 su OPTIONS USERNAME
-    
+
 //logint shell option
 su -
 su -l
 su --login
-    
+
 exit //logout
 sl //administrative access
 ```
@@ -80,10 +80,10 @@ ex) -rw-r--r-- 1 sysadmin sysadmin 647 Dec 20  2017 hello.sh
 chmod command를 이용해 파일의 Permission을 변경한다.
 
 ```C
-chmod [<SET><ACTION><PERMISSIONS>]... FILE	
+chmod [<SET><ACTION><PERMISSIONS>]... FILE
 ```
 
-SET> 
+SET>
 
 * u : user who owns the file
 * g : group who owns the file
@@ -98,7 +98,7 @@ ACTION>
 
 PERMISSION>
 
-* r 
+* r
 * w
 * x
 
@@ -173,7 +173,7 @@ mv command는 파일을 SOURCE 에서 DESTINATION 디렉토리로 옮긴다.
 <br/>
 
 ```C
-rm [OPTINS] FILE	
+rm [OPTINS] FILE
 ```
 
 rm Command 는 영구적으로 file을 삭제한다.

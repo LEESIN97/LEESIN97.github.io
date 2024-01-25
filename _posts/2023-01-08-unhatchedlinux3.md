@@ -3,7 +3,7 @@ layout: single
 title:  "unhatched linux(3)"
 excerpt: "Networking academy Winter 2022 Linux Unhatched - MY Engineering Camp"
 
-categories: etc
+categories: linux
 tag: [linux, os, linux_command_syntax]
 
 toc: true
@@ -13,7 +13,7 @@ author_profile: true
 sidebar: true
 
 search: true
- 
+
 date: 2023-01-08
 last_modified_at: 2023-01-08
 ---

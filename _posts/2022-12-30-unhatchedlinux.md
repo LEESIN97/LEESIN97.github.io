@@ -3,7 +3,7 @@ layout: single
 title:  "unhatched linux(1)"
 excerpt: "Networking academy Winter 2022 Linux Unhatched - MY Engineering Camp"
 
-categories: etc
+categories: linux
 tag: [linux, os, linux_command_syntax]
 
 toc: true
@@ -13,7 +13,7 @@ author_profile: true
 sidebar: true
 
 search: true
- 
+
 date: 2022-12-30
 last_modified_at: 2023-01-02
 
@@ -34,12 +34,12 @@ sysadmin@localhost:~$ ls
 
 다음과 같은 형식을 따른다.
 
-command [options...] [arguments...] 
+command [options...] [arguments...]
 
 * arguments  : 명령이 수행할 항목을 지정.
 * options : 옵션을 사용하여 명령의 동작을 변경한다.
 
-ex) ls is displays a listing of information about files. command를 설정된 options에 따라 directory가 argument인 곳에서 실행 
+ex) ls is displays a listing of information about files. command를 설정된 options에 따라 directory가 argument인 곳에서 실행
 
  만약 options와 arguments를 입력하지 않았다면 현재의 directory의 list of files를 display한다.
 
@@ -70,7 +70,7 @@ sysadmin@localhost:~$ ls
 
 ```c
 ls -l -r //long display, 알파벳순서를 거꾸로
-ls -rl //long display, 알파벳순서를 거꾸로 
+ls -rl //long display, 알파벳순서를 거꾸로
 ls -lr //long display, 알파벳순서를 거꾸로
 ```
 
@@ -158,7 +158,7 @@ ls [options] [file]
 위에서와 같이 file을 long listing 하게 되면 여러파일들이 출력되는데 그중 하나는 다음과 같이 출력이 된다.
 
 ```
--rw-r--r-- 1 root   root  18047 Dec 20  2017 alternatives.log                   
+-rw-r--r-- 1 root   root  18047 Dec 20  2017 alternatives.log
 
 ```
 
@@ -176,13 +176,13 @@ ls [options] [file]
 
 맨 앞의 symbol 이후의 문자들을 자세히 살펴보면
 
-* -**rw-r--r--** 1 root   root  18047 Dec 20  2017 alternatives.log 
+* -**rw-r--r--** 1 root   root  18047 Dec 20  2017 alternatives.log
 
   rw-r--r--1 : permissions (특정 사용자가 파일을 액세스할 수 있는 방법)
 
 * -rw-r--r-- **1** root   root  18047 Dec 20  2017 alternatives.log
 
-  1 :  Hard Link Count 
+  1 :  Hard Link Count
 
 * -rw-r--r-- 1 **root**   root  18047 Dec 20  2017 alternatives.log
 
@@ -202,9 +202,9 @@ ls [options] [file]
 
 * -rw-r--r-- 1 root   root  18047 Dec 20  2017 **alternatives.log**
 
-  alternatives.log : 파일 이름             
+  alternatives.log : 파일 이름
 
-  
+
 
 마지막에 -> 화살표가 있는 경우가 있는데 다른 하나의 파일을 가리키는 것이다.
 
@@ -218,7 +218,7 @@ ls [options] [file]
 
 <br/>
 
-``` 
+```
 ls -lt /var/log // timestamp 순으로 long listing
 ls -l -S /var/log // size순으로 long listing
 ls -lSr /var/log // size역순으로 long listing

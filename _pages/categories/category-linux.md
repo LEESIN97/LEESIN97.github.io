@@ -1,11 +1,11 @@
 ---
-title: "etc"
+title: "linux"
 layout: archive
-permalink: categories/etc
+permalink: categories/linux
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.etc %}
+{% assign posts = site.categories.linux %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
