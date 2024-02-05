@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "LS.Blog"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
-name                     : "LEE SHIN"
+name                     : "Shinsight"
 description              : "LS.Blog"
 url                      : "https://LEESIN97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "LEE SHIN"
+  name             : "Shinsight"
   avatar           : "/assets/images/myphoto.jpg"
-  bio              : "Shinsight"
+  bio              : "인상, 반복, 연상"
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
