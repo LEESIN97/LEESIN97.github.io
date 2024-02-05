@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ShinSight"
+title                    : "LS.Blog"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
-name                     : "Lee shin"
-description              : "ShinSight"
+name                     : "LEE SHIN"
+description              : "LS.Blog"
 url                      : "https://LEESIN97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "ShinSight"
+    shortname            : "LS.Blog"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lee shin"
+  name             : "LEE SHIN"
   avatar           : "/assets/images/myphoto.jpg"
-  bio              : "인상, 반복, 연상"
+  bio              : "Shinsight"
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
