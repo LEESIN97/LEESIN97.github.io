@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "알고리즘 - 코딩테스트 준비하기"
+title:  "알고리즘 - 준비"
 excerpt: "Do it! 알고리즘 코딩 테스트 - C++편"
 
 categories: Algorithm
