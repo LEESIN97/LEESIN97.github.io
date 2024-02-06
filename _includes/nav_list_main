@@ -66,11 +66,11 @@
                     {% if category[0] == "SQL" %}
                         <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
                     {% endif %}
-                    {% if category[0] == "Useful code" %}
-                        <li><a href="/categories/Useful code" class="">Useful_code ({{category[1].size}})</a></li>
+                    {% if category[0] == "Useful_code" %}
+                        <li><a href="/categories/Useful_code" class="">Useful_code ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-                
+
 
 
             </ul>

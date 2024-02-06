@@ -3,7 +3,7 @@ layout: single
 title:  "코테를 위한 파이썬 문법"
 excerpt: "이것이 코딩테스트다"
 
-categories: Useful code
+categories: Useful_code
 tag: [python]
 
 toc: true
