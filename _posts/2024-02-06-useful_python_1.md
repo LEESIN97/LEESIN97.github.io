@@ -47,13 +47,26 @@ typora-root-url: ../
 
 ```python
 a = 0.3 + 0.6
-print(a)
+print(round(a, 4))
 
-if a == 0.9:
-	print(True)
+if round(a,4) == 0.9: #넷째 자리에서의 반올림
+    print(True)
 else:
-	print(False)
+    print(False)
 ```
 
 
+
+<br/>
+
+
+
+## 리스트 자료형
+
+코딩 테스트 문제에서 크기가 N인 1차원 리스트를 초기화해야하는 경우가 많은데 다음과 같이 한다.
+
+```python
+n = 10
+a = [0] * n # 모든 값이 0인 크기가 N인 1차원 리스트 초기화
+```
 
