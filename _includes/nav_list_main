@@ -67,10 +67,15 @@
                         <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "Useful code" %}
+                        <li><a href="/categories/Useful code" class="">Useful code ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
 
 
             </ul>
-
+    
       </li>
   </ul>
 </nav>
