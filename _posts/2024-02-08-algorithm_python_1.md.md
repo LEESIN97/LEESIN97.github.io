@@ -84,3 +84,112 @@ row_min = [min(card_table[i]) for i in range(n)]
 print(max(row_min))
 ```
 
+
+
+**답안 예시**
+
+```python
+import time
+
+n, m = map(int, input().split())
+
+result = 0
+start_time = time.time()
+for i in range(n):
+  data = list(map(int, input().split()))
+  min_value = min(data)
+  result = max(result, min_value)
+end_time = time.time()
+spended_time = end_time - start_time
+print(result)
+print(spended_time)
+###################################################
+result = 0
+start_time = time.time()
+for _ in range(n):
+  data = list(map(int, input().split()))
+  min_value = 10001
+  for a in data:
+    min_value = min(min_value, a)
+
+  result = max(result, min_value)
+end_time = time.time()
+spended_time = end_time - start_time
+
+print(result)
+print(spended_time)
+
+```
+
+두가지의 방법이 있다. 두 방법의 시간을 측정한 결과는 아래의 사진과 같다.
+
+![Screenshot from 2024-02-08 18-20-07](/images/2024-02-08-algorithm_python_1.md/Screenshot from 2024-02-08 18-20-07.png)
+
+------
+
+
+
+
+
+# 1이 될 때까지
+
+**내풀이**
+
+```python
+n, k = map(int, input().split())
+cnt = 0
+while n != 1:
+  if n % k == 0:
+    n = n // k
+    cnt += 1
+  else:
+    n -= 1
+    cnt += 1
+print(cnt)
+```
+
+최대한 많이 나눠줌으로써 최적의 해를 보장한다.
+
+
+
+**답안 예시**
+
+```python
+n, k = map(int, inpu().split())
+result = 0
+
+while n >= k:
+	while n % k != 0:
+		n -= 1
+		result += 1
+	n //= k
+	result += 1
+	
+while n > 1:
+	n -= 1
+	result += 1
+print(result)
+```
+
+위의 두 코드는 n의 범위가 10만 이하의 경우에만 제한시간에 만족되게 동작할 수 있다.
+
+
+
+```python
+n, k = map(int, input().split())
+result = 0
+
+while True:
+	target = (n // k) * k
+	result += (n - target)
+	n = target
+	if n < k:
+		break
+	result += 1
+	n //= k
+result += (n - 1)
+print(result)
+```
+
+
+
