@@ -37,6 +37,9 @@
                     {% if category[0] == "AlgorithmCpp" %}
                         <li><a href="/categories/AlgorithmCpp" class="">algorithm_C++ ({{category[1].size}})</a></li>
                     {% endif %}
+                    {% if category[0] == "AlgorithmPython" %}
+                        <li><a href="/categories/AlgorithmPython" class="">algorithm_python ({{category[1].size}})</a></li>
+                    {% endif %}
                 {% endfor %}
 
 
