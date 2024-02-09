@@ -31,7 +31,7 @@ Dept-First Search, 깊이 우선 탐색 알고리즘
 
 ![출처 : 위키백과](/images/2024-02-09-algorithm_python_5/Directed.svg.png)
 
-> *[https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%9E%98%ED%94%84(%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)](https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%9E%98%ED%94%84_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)) (출처 : 위키백과)*
+> *[출처 : 위키 백과](https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%9E%98%ED%94%84_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0))*
 
 
 
