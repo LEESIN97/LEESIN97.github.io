@@ -1,0 +1,33 @@
+---
+layout: single
+title:  "BFS, DFS"
+excerpt: "이것이 코딩 테스트다"
+
+categories: AlgorithmPython
+tag: [Python, Algorithm, BFS, DFS]
+
+toc: true
+toc_sticky: true
+
+author_profile: true
+sidebar: true
+
+search: true
+
+date: 2024-02-09
+last_modified_at: 2024-02-09
+typora-root-url: ../
+---
+
+# DFS
+
+Dept-First Search, 깊이 우선 탐색 알고리즘
+
+
+
+## 그래프의 기본 구조, 표현 방식
+
+그래프틑 Node, Edge로 표현이 되며 이때 Node를 Vetex라고도 말한다.
+
+![출처 : 위키백과](/images/2024-02-09-algorithm_python_5/Directed.svg.png)
+
