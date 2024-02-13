@@ -246,8 +246,8 @@ enabled:
 layouts:
 category: archive-taxonomy
 tag: archive-taxonomy
-# permalinks:
-# category: /categories/:name/
+permalinks:
+category: /categories/:name/
 # tag: /tags/:name/
 
 
