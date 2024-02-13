@@ -4,7 +4,7 @@ title:  "[알고리즘 Python] BFS, DFS"
 excerpt: "이것이 코딩 테스트다"
 
 categories: AlgorithmPython
-tag: [Python, Algorithm, BFS, DFS]
+tag: [Algorithm_Python, BFS, DFS]
 
 toc: true
 toc_sticky: true

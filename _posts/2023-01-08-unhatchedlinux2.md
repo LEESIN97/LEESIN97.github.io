@@ -4,7 +4,7 @@ title:  "[리눅스] unhatched linux(2)"
 excerpt: "Networking academy Winter 2022 Linux Unhatched - MY Engineering Camp"
 
 categories: linux
-tag: [linux, os, linux_command_syntax]
+tag: [Linux]
 
 toc: true
 toc_sticky: true

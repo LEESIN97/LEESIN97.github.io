@@ -4,7 +4,7 @@ title:  "[알고리즘 Python] 그리디 알고리즘"
 excerpt: "이것이 코딩 테스트다"
 
 categories: AlgorithmPython
-tag: [Python, Algorithm, Greedy]
+tag: [Algoritm_Python, Greedy]
 
 toc: true
 toc_sticky: true

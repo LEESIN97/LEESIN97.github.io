@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "[Pythonㅊ] 코테를 위한 파이썬 문법"
+title:  "[Python] 코테를 위한 파이썬 문법"
 excerpt: "이것이 코딩테스트다"
 
 categories: Useful_code
-tag: [python]
+tag: [Python]
 
 toc: true
 toc_sticky: true
