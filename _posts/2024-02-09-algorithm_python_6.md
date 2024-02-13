@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "정렬"
+title:  "[알고리즘 Python] 정렬"
 excerpt: "이것이 코딩 테스트다"
 
 categories: AlgorithmPython

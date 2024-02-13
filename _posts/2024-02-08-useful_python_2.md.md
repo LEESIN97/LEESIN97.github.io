@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "시간과 메모리 측정"
+title:  "[Python] 시간과 메모리 측정"
 excerpt: "이것이 코딩테스트다"
 
 categories: Useful_code

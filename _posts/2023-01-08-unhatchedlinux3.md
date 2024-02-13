@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "unhatched linux(3)"
+title:  "[리눅스] unhatched linux(3)"
 excerpt: "Networking academy Winter 2022 Linux Unhatched - MY Engineering Camp"
 
 categories: linux

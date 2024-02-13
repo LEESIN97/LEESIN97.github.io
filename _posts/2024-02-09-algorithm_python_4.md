@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "파이썬에서 스택, 큐, 재귀함수"
+title:  "[알고리즘 Python] 파이썬에서 스택, 큐, 재귀함수"
 excerpt: "이것이 코딩 테스트다"
 
 categories: AlgorithmPython

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "알고리즘 - 그리디 알고리즘"
+title:  "[알고리즘 Python] 그리디 알고리즘"
 excerpt: "이것이 코딩 테스트다"
 
 categories: AlgorithmPython
