@@ -63,7 +63,7 @@ print(sequential_search(n, target, array))
 
 이진 탐색은 배열이 **정렬**되어 있어야만 사용할 수 있다.
 
-시작점, 끝점, 중간점을 이용하고, 중간점 위치에 있는 원소와 반복적으로 비교하면서 탐색한다.
+시작점, 끝점, 중간점을 이용하고, 중간점 위치에 있는 원소와 ````반복적으로 비교하면서 탐색한다.
 
 target의 값보다 중간점에 있는 원소가 더 크다면, 끝점을 중간점 바로 왼쪽에 둔다.
 
@@ -144,9 +144,108 @@ else:
 
 이진 탐색 트리가 구현이 되있을 때 이진 탐색은 루트 노드부터 왼쪽 자식 노드 혹은 오른쪽 자식 노드로 이동하며 반복적으로 방문한다.
 
+------
 
 
 
+## 문제
+
+### 부품 찾기
+
+```python
+def binary_search(target, array, start, end):
+  mid = (start + end) // 2
+  if start > end:
+    return 'no'
+
+  if array[mid] == target:
+    return 'yes'
+  elif array[mid] > target:
+    return binary_search(target, array, start, mid - 1)
+  elif array[mid] < target:
+    return binary_search(target, array, mid + 1, end)
 
 
+n = int(input())
+product = list(map(int, input().split()))
+
+m = int(input())
+target = list(map(int, input().split()))
+
+product.sort()
+
+start_index = 0
+end_index = n - 1
+
+for target_element in target:
+  print(binary_search(target_element, product, start_index, end_index),
+        end=' ')
+
+```
+
+**게수 정렬**을 이용한 풀이
+
+```python
+n = int(input())
+array = [0] * 1000001
+
+for i in rnput().split():
+	array[int(i)] = 1
+
+m = int(input())
+x = list(map(int, input().split()))
+for i in x:
+	if array[i == 1:
+		print('yes', end = ' ')
+	else:
+		print('no', end = ' ')
+		
+```
+
+**집합 자료형**을 이용한 풀이
+
+```python
+n = int(input())
+array = set(map(int, input().split()))
+
+m = int(input())
+
+x = list(map(int, input().split()))
+
+for i in x:
+	if i in array:
+		print('yes', end = ' ')
+	else:
+		print('no', end = ' ')
+```
+
+ 리스트(list)나 튜플(tuple) 자료형을 사용해도 기능적으로는 동일한 결과를 낳지만, set 자료형이 내부적으로 해시 테이블을 기반으로 하기 때문에 멤버십 테스트가 빠르다.
+
+
+
+### 떡볶이 떡 만들기
+
+```python
+def binary_search(target, array, start, end):
+  result = 0
+  while start <= end:
+      mid = (start + end) // 2
+      sum = 0
+      for x in array:
+          if x > mid:
+              sum += x - mid
+      if sum < target:
+          end = mid - 1
+      else:
+          result = mid
+          start = mid + 1
+  return result
+
+n, m = map(int, input().split())
+rcake_array = list(map(int, input().split()))
+rcake_array.sort()
+print(binary_search(m, rcake_array, 0, rcake_array[n - 1]))
+
+
+```
 
