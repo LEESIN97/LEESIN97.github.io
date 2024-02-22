@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[알고리즘 Python] 최단 경로 알고리즘"
-excerpt: "이것이 코딩 테스트다"
+excerpt: "이것이 코딩 테스트다 - 저자 나동빈"
 
 categories: AlgorithmPython
 tag: [Algorithm_Python, 최단 경로]
@@ -151,3 +151,39 @@ for i in range(1, n+1):
 ## 플로이드 워셜 알고리즘
 
 '모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구해야 하는 경우'
+
+2차원 리스트에 '최단 거리' 정보를 저장하고, 노드의 개수 만큼 2차원 리스트를 갱신한다. N개의 노드를 선택하고 나머지의 N-1개의 노드 중에서 서로 다른 쌍 (A, B)를 선택한다. 그래서 시간 복잡도는 $O(N^3)$이다. 구체적인 점화식은 다음과 같다. $min(D~ab~, D~ak~ + D~kb~)$ 
+
+```python
+INF = int(1e9)
+
+n = int(input())
+m = int(input())
+
+graph = [[INF] * (n + 1) for _ in range(n + 1)]
+
+for a in range(1, n + 1):
+    for b in range(1, n + 1):
+        if a == b:
+            graph[a][b] = 0
+            
+for _ in range(m):
+    a, b, c = map(int, input().split())
+    graph[a][b] = c
+    
+for k in range(1, n + 1):
+    for a in range(1, n + 1):
+        for b in range(1, n + 1):
+            graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+            
+for a in range(1, n + 1):
+    for b in range(1, n + 1):
+        if graph[a][b] == INF:
+            print('INFINITY', end = ' ')
+            
+        else:
+            print(graph[a][b], end = ' ')
+	print()
+
+```
+

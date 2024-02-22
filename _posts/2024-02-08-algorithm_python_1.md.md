@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[알고리즘 Python] 그리디 알고리즘"
-excerpt: "이것이 코딩 테스트다"
+excerpt: "이것이 코딩 테스트다 - 저자 나동빈"
 
 categories: AlgorithmPython
 tag: [Algoritm_Python, Greedy]

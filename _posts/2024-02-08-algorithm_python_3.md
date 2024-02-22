@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[알고리즘 Python] 파이썬에서 리스트 크기, 1초당 연산 횟수"
-excerpt: "이것이 코딩 테스트다"
+excerpt: "이것이 코딩 테스트다 - 저자 나동빈"
 
 categories: AlgorithmPython
 tag: [Algoritm_Python]
