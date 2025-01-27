@@ -11,87 +11,74 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
       </li>
       <li>
-        ; <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        ; <span class="nav__sub-title">LIBRARY / FRAMEWORK</span>
-        ;     <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-        ;     <ul>
-        ;         <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/ROS2 주소의 글로 링크 연결-->
-        ;         <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-        ;         {% for category in site.categories %}
-        ;             {% if category[0] == "ROS2" %}
-        ;                 <li><a href="/categories/ROS2" class="">ROS 2({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;         {% endfor %}
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">LIBRARY / FRAMEWORK</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/ROS2 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "ROS2" %}
+                        <li><a href="/categories/ROS2" class="">ROS 2({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
 
 
-        ;     </ul>
-
-
-
-        ; <span class="nav__sub-title">CODE / ALGORITHM</span>
-        ;     <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-        ;     <ul>
-        ;         <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/AlgorithmCpp 주소의 글로 링크 연결-->
-        ;         <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-        ;         {% for category in site.categories %}
-        ;             {% if category[0] == "AlgorithmCpp" %}
-        ;                 <li><a href="/categories/AlgorithmCpp" class="">algorithm_C++ ({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;             {% if category[0] == "AlgorithmPython" %}
-        ;                 <li><a href="/categories/AlgorithmPython" class="">algorithm_python ({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;         {% endfor %}
-
-
-        ;     </ul>
+            </ul>
 
 
 
-        ; <span class="nav__sub-title">LINUX / UBUNTU</span>
-        ;     <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-        ;     <ul>
-        ;         <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/etc 주소의 글로 링크 연결-->
-        ;         <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-        ;         {% for category in site.categories %}
-        ;             {% if category[0] == "linux" %}
-        ;                 <li><a href="/categories/linux" class="">LINUX ({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;         {% endfor %}
-        ;     </ul>
+        <span class="nav__sub-title">CODE / ALGORITHM</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/AlgorithmCpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "AlgorithmCpp" %}
+                        <li><a href="/categories/AlgorithmCpp" class="">algorithm_C++ ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "AlgorithmPython" %}
+                        <li><a href="/categories/AlgorithmPython" class="">algorithm_python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
 
 
-        ;     <span class="nav__sub-title">TIPS / ETC</span>
-        ;     <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-        ;     <ul>
-        ;         <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/ 주소의 글로 링크 연결-->
-        ;         <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-        ;         {% for category in site.categories %}
-        ;             {% if category[0] == "SQL" %}
-        ;                 <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;             {% if category[0] == "Useful_code" %}
-        ;                 <li><a href="/categories/Useful_code" class="">Useful_code ({{category[1].size}})</a></li>
-        ;             {% endif %}
-        ;         {% endfor %}
+            </ul>
 
 
 
-        ;     </ul>
-            ; 포트폴리오
-            <span class="nav__sub-title">Portfolio</span>
-                <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-                <ul>
-                    <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/AlgorithmCpp 주소의 글로 링크 연결-->
-                    <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-                    {% for category in site.categories %}
-                        {% if category[0] == "Portfolio" %}
-                            <li><a href="/categories/Portfolio" class="">Portfolio ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
+        <span class="nav__sub-title">LINUX / UBUNTU</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/etc 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "linux" %}
+                        <li><a href="/categories/linux" class="">LINUX ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
 
-                </ul>
+            <span class="nav__sub-title">TIPS / ETC</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/ 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "SQL" %}
+                        <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "Useful_code" %}
+                        <li><a href="/categories/Useful_code" class="">Useful_code ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
 
+
+
+            </ul>
+            
+            
     
       </li>
   </ul>
