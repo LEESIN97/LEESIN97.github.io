@@ -20,7 +20,7 @@ title                    : "LS.Blog"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
 name                     : "LEE SHIN"
-description              : "LS.Blog"
+description              : "Exploring Embedded Systems & Vision – 이신의 포트폴리오"
 url                      : "https://LEESIN97.github.io"
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "LS.Blog"
+    shortname            : "Exploring Embedded Systems & Vision – 이신의 포트폴리오"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "꾸준하고 싶은 사람 🐵"
+  name             : "이신"
   avatar           : "/assets/images/IMG_2216.jpeg"
   bio              : ""
   location         : "Seoul, Republic of Korea"
@@ -119,9 +119,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/LEESIN97"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/sinorhyun"
 
 # Site Footer
 footer:
@@ -129,9 +126,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/LEESIN97"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/sinorhyun"
 
 
 # Reading Files
