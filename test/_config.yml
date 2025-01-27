@@ -72,7 +72,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/bio-photo.jpg"
+og_image                 : "assets\images\profile_image.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -92,7 +92,7 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "assets\images\profile_image.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   links:
